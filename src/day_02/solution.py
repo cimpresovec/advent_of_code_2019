@@ -6,7 +6,7 @@ def process_program(program):
     while True:
         if program[ip] == 99:
             break
-        instruction = program[ip:ip+4]
+        instruction = program[ip:ip + 4]
         if instruction[0] == 1:
             "Addition"
             program[instruction[3]] = program[instruction[1]] + program[instruction[2]]
