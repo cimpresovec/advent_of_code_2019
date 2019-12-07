@@ -1,4 +1,5 @@
 import unittest
+
 from src.day_01 import solution
 
 

@@ -4,9 +4,9 @@ def is_valid(number: int) -> bool:
         return False
     pair = False
     for i in range(1, len(digits)):
-        if digits[i] < digits[i-1]:
+        if digits[i] < digits[i - 1]:
             return False
-        if digits[i] == digits[i-1]:
+        if digits[i] == digits[i - 1]:
             pair = True
     return pair
 
@@ -28,7 +28,7 @@ def is_valid_extra(number: int) -> bool:
                 if count == 1:
                     pair = True
                 break
-            elif digits[i+1] != digits[i]:
+            elif digits[i + 1] != digits[i]:
                 if count == 1:
                     pair = True
                 break
